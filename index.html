@@ -15,259 +15,192 @@
     />
     <title>Portfolio</title>
   </head>
-  <body class="w3-light-grey w3-content" style="max-width: 1600px">
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-collapse w3-white"
-      style="z-index: 3; width: 200px"
-      id="mySidebar"
-    >
-      <br />
-      <div class="w3-container">
-        <img
-          src="img/avatar_g2.jpg"
-          style="width: 100%"
-          class="w3-round"
-        /><br /><br />
-        <h4><b>PORTFOLIO</b></h4>
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="#portfolio"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-padding w3-text-teal"
-          ><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a
-        >
-        <a
-          href="#about"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a
-        >
-        <a
-          href="#contact"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a
-        >
-      </div>
-      <div class="w3-panel w3-large">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-      </div>
-    </nav>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large w3-animate-opacity"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 200px">
-      <!-- Header -->
-      <header id="portfolio">
-        <img
-          src="img/avatar_g2.jpg"
-          style="width: 65px"
-          class="
-            img-small
-            w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity
-          "
-        />
-        <div class="w3-container">
-          <h1><b>My Portfolio</b></h1>
-          <div class="w3-section w3-bottombar w3-padding-16">
-            <span class="w3-margin-right">Filter:</span>
-            <button class="w3-button w3-black">ALL</button>
-            <button class="w3-button w3-white">
-              <i class="fa fa-diamond w3-margin-right"></i>Design
-            </button>
-            <button class="w3-button w3-white w3-hide-small">
-              <i class="fa fa-photo w3-margin-right"></i>Photos
-            </button>
-            <button class="w3-button w3-white w3-hide-small">
-              <i class="fa fa-map-pin w3-margin-right"></i>Art
-            </button>
-          </div>
+  <body>
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+      <!-- Left Side-bar -->
+      <div class="side-bar">
+        <div class="avatar-photo"><img src="img/avatar_g2.jpg" alt="" /></div>
+        <div class="nav-list">
+          <ul>
+            <li><h3>PORTFOLIO</h3></li>
+            <li>
+              <i class="fa fa-th-large fa-fw w3-margin-right"></i>
+              <a href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li>
+              <i class="fa fa-user fa-fw w3-margin-right"></i
+              ><a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope fa-fw w3-margin-right"></i
+              ><a href="#contact">CONTACT</a>
+            </li>
+          </ul>
         </div>
-      </header>
-
-      <!-- First Photo Grid-->
-      <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom">
-          <img
-            src="img/mountains.jpg"
-            alt="Norway"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>
-              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-              condimentum, porta lectus vitae, ultricies congue gravida diam non
-              fringilla.
-            </p>
-          </div>
-        </div>
-        <div class="w3-third w3-container w3-margin-bottom">
-          <img
-            src="img/lights.jpg"
-            alt="Norway"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>
-              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-              condimentum, porta lectus vitae, ultricies congue gravida diam non
-              fringilla.
-            </p>
-          </div>
-        </div>
-        <div class="w3-third w3-container">
-          <img
-            src="img/nature.jpg"
-            alt="Norway"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>
-              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-              condimentum, porta lectus vitae, ultricies congue gravida diam non
-              fringilla.
-            </p>
-          </div>
+        <div class="social-icons">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
       </div>
 
-      <!-- Second Photo Grid-->
-      <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom">
-          <img
-            src="img/p1.jpg"
-            alt="Norway"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>
-              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-              condimentum, porta lectus vitae, ultricies congue gravida diam non
-              fringilla.
-            </p>
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Header -->
+        <div class="header" id="portfolio">
+          <div class="my-portfolio">
+            <h1>My Portfolio</h1>
+            <div class="avatar"><img src="img/avatar_g2.jpg" alt="" /></div>
+          </div>
+          <div class="filter-buttons">
+            <div class="filter"><h3>Filter:</h3></div>
+            <button>ALL</button>
+            <button><i class="fa fa-diamond"></i>Design</button>
+            <button><i class="fa fa-photo"></i>Photos</button>
+            <button><i class="fa fa-map-pin"></i>Art</button>
           </div>
         </div>
-        <div class="w3-third w3-container w3-margin-bottom">
-          <img
-            src="img/p2.jpg"
-            alt="Norway"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>
-              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-              condimentum, porta lectus vitae, ultricies congue gravida diam non
-              fringilla.
-            </p>
-          </div>
-        </div>
-        <div class="w3-third w3-container">
-          <img
-            src="img/p3.jpg"
-            alt="Norway"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-          <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
-            <p>
-              Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
-              condimentum, porta lectus vitae, ultricies congue gravida diam non
-              fringilla.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Pagination -->
-      <div class="w3-center w3-padding-32">
-        <div class="w3-bar">
-          <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-          <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-        </div>
-      </div>
-
-      <!-- Images of Me -->
-      <div class="w3-row-padding w3-padding-16" id="about">
-        <div class="w3-col m6">
-          <img src="img/avatar_g.jpg" alt="Me" style="width: 100%" />
-        </div>
-        <div class="w3-col m6">
-          <img src="img/me2.jpg" alt="Me" style="width: 100%" />
-        </div>
-      </div>
-
-      <div class="w3-container w3-padding-large" style="margin-bottom: 32px">
-        <h4><b>About Me</b></h4>
-        <p>
-          Just me, myself and I, exploring the universe of unknownment. I have a
-          heart of love and an interest of lorem ipsum and mauris neque quam
-          blog. I want to share my world with you. Praesent tincidunt sed tellus
-          ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-          congue gravida diam non fringilla. Praesent tincidunt sed tellus ut
-          rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-          congue gravida diam non fringilla.
-        </p>
-        <hr />
-      </div>
-
-      <!-- Contact Section -->
-      <div class="w3-container w3-padding-large w3-grey">
-        <h4 id="contact"><b>Contact Me</b></h4>
-        <div
-          class="w3-row-padding w3-center w3-padding-24"
-          style="margin: 0 -16px"
-        >
-          <div class="w3-third w3-dark-grey">
-            <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-            <p>email@email.com</p>
+        <!-- Section-A photos -->
+        <div class="section-a-photos">
+          <div>
+            <img src="img/mountains.jpg" alt="Norway" style="width: 100%" />
+            <div>
+              <p><b>Lorem Ipsum</b></p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+            </div>
           </div>
-          <div class="w3-third w3-teal">
-            <p>
-              <i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i>
-            </p>
-            <p>Chicago, US</p>
+          <div>
+            <img src="img/lights.jpg" alt="Norway" style="width: 100%" />
+            <div>
+              <p><b>Lorem Ipsum</b></p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+            </div>
           </div>
-          <div class="w3-third w3-dark-grey">
-            <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-            <p>512312311</p>
+          <div>
+            <img src="img/nature.jpg" alt="Norway" style="width: 100%" />
+            <div>
+              <p><b>Lorem Ipsum</b></p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Footer -->
-      <footer class="w3-container w3-padding-32 w3-dark-grey">
-        <div class="w3-row-padding">
-          <div class="w3-third">
+        <!-- Section-B photos -->
+        <div class="section-b-photos">
+          <div>
+            <img src="img/p1.jpg" alt="Norway" style="width:100%" ">
+            <div>
+              <p><b>Lorem Ipsum</b></p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/p2.jpg" alt="Norway" style="width:100%" ">
+            <div>
+              <p><b>Lorem Ipsum</b></p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+            </div>
+          </div>
+          <div class="w3-third w3-container">
+            <img src="img/p3.jpg" alt="Norway" style="width:100%" ">
+            <div>
+              <p><b>Lorem Ipsum</b></p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contant Slider -->
+        <div class="slider">
+          <div>
+            <a href="#">«</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">»</a>
+          </div>
+        </div>
+
+        <!-- Section-C photos -->
+        <div class="section-c-photos">
+          <div><img src="img/avatar_g.jpg"Me" style="width: 100%" /></div>
+          <div>
+            <img src="img/me2.jpg" alt="Me" style="width: 100%" />
+          </div>
+        </div>
+
+        <!-- Section-D About Me -->
+        <div class="section-d-about">
+          <h4><b>About Me</b></h4>
+          <p>
+            Just me, myself and I, exploring the universe of unknownment. I have
+            a heart of love and an interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+          </p>
+        </div>
+
+        <!-- Section-E contact -->
+        <div class="section-e-contact">
+          <div class="contact-head">
+            <h4 id="contact"><b>Contact Me</b></h4>
+          </div>
+          <div class="contact-icons">
+            <div>
+              <p>
+                <i class="fa fa-envelope"></i>
+              </p>
+              <p>email@email.com</p>
+            </div>
+            <div>
+              <p>
+                <i class="fa fa-map-marker"></i>
+              </p>
+              <p>Chicago, US</p>
+            </div>
+            <div>
+              <p><i class="fa fa-phone"></i></p>
+              <p>512312311</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section-F Footer -->
+        <div class="section-f-footer">
+          <div class="footer">
             <h3>FOOTER</h3>
             <p>
               Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
@@ -277,31 +210,27 @@
             <p>Powered by <a href="#" target="_blank">Seytech</a></p>
           </div>
 
-          <div class="w3-third">
+          <div class="blog-posts">
             <h3>BLOG POSTS</h3>
             <ul class="w3-ul w3-hoverable">
               <li class="w3-padding-16">
                 <img
                   src="img/workshop.jpg"
-                  class="w3-left w3-margin-right"
                   style="width: 50px"
+                  alt="workshop"
                 />
                 <span class="w3-large">Lorem</span><br />
                 <span>Sed mattis nunc</span>
               </li>
               <li class="w3-padding-16">
-                <img
-                  src="img/gondol.jpg"
-                  class="w3-left w3-margin-right"
-                  style="width: 50px"
-                />
+                <img src="img/gondol.jpg" style="width: 50px" alt="gondol" />
                 <span class="w3-large">Ipsum</span><br />
                 <span>Praes tinci sed</span>
               </li>
             </ul>
           </div>
 
-          <div class="w3-third">
+          <div class="popular-tags">
             <h3>POPULAR TAGS</h3>
             <p>
               <span class="w3-tag w3-black w3-margin-bottom">Travel</span>
@@ -338,27 +267,10 @@
               >
             </p>
           </div>
+
+          <div>Powered by <a href="#">Emre Pirci</a></div>
         </div>
-      </footer>
-
-      <div class="w3-black w3-center w3-padding-24">
-        Powered by <a href="#" class="w3-hover-opacity">your team</a>
       </div>
-
-      <!-- End page content -->
     </div>
-
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
-    </script>
   </body>
 </html>

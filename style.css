@@ -1,4 +1,4 @@
-/* Core Style */
+/* Defult Style */
 body,
 h1,
 h2,
@@ -8,9 +8,14 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-.img-small {
-  position: absolute;
-  right: 0;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-
+/* Core Style */
