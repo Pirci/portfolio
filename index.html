@@ -20,31 +20,33 @@
     <div class="wrapper">
       <!-- Left Side-bar -->
       <div class="side-bar">
-        <div class="avatar-photo"><img src="img/avatar_g2.jpg" alt="" /></div>
+        <div class="avatar-photo">
+          <img src="img/avatar_g2.jpg" alt="profil photo" class="radius" />
+        </div>
         <div class="nav-list">
           <ul>
             <li><h3>PORTFOLIO</h3></li>
-            <li>
-              <i class="fa fa-th-large fa-fw w3-margin-right"></i>
-              <a href="#portfolio">PORTFOLIO</a>
+            <span
+              ><li id="gray">
+                <i class="fa fa-th-large"></i>
+                <a href="#portfolio">PORTFOLIO</a>
+              </li></span
+            >
+            <li id="gray">
+              <i class="fa fa-user"></i><a href="#about">ABOUT</a>
+            </li>
+            <li id="gray">
+              <i class="fa fa-envelope"></i><a href="#contact">CONTACT</a>
             </li>
             <li>
-              <i class="fa fa-user fa-fw w3-margin-right"></i
-              ><a href="#about">ABOUT</a>
-            </li>
-            <li>
-              <i class="fa fa-envelope fa-fw w3-margin-right"></i
-              ><a href="#contact">CONTACT</a>
+              <i id="opacity" class="fa fa-facebook-official"></i>
+              <i id="opacity" class="fa fa-instagram"></i>
+              <i id="opacity" class="fa fa-snapchat"></i>
+              <i id="opacity" class="fa fa-pinterest-p"></i>
+              <i id="opacity" class="fa fa-twitter"></i>
+              <i id="opacity" class="fa fa-linkedin"></i>
             </li>
           </ul>
-        </div>
-        <div class="social-icons">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
       </div>
 
@@ -57,8 +59,8 @@
             <div class="avatar"><img src="img/avatar_g2.jpg" alt="" /></div>
           </div>
           <div class="filter-buttons">
-            <div class="filter"><h3>Filter:</h3></div>
-            <button>ALL</button>
+            <span>Filter:</span>
+            <button id="first-button">ALL</button>
             <button><i class="fa fa-diamond"></i>Design</button>
             <button><i class="fa fa-photo"></i>Photos</button>
             <button><i class="fa fa-map-pin"></i>Art</button>
@@ -68,7 +70,7 @@
         <!-- Section-A photos -->
         <div class="section-a-photos">
           <div>
-            <img src="img/mountains.jpg" alt="Norway" style="width: 100%" />
+            <img src="img/mountains.jpg" alt="Norway" />
             <div>
               <p><b>Lorem Ipsum</b></p>
               <p>
@@ -79,7 +81,7 @@
             </div>
           </div>
           <div>
-            <img src="img/lights.jpg" alt="Norway" style="width: 100%" />
+            <img src="img/lights.jpg" alt="Norway" />
             <div>
               <p><b>Lorem Ipsum</b></p>
               <p>
@@ -90,7 +92,7 @@
             </div>
           </div>
           <div>
-            <img src="img/nature.jpg" alt="Norway" style="width: 100%" />
+            <img src="img/nature.jpg" alt="Norway" />
             <div>
               <p><b>Lorem Ipsum</b></p>
               <p>
@@ -139,7 +141,7 @@
           </div>
         </div>
 
-        <!-- Contant Slider -->
+        <!-- Content Slider -->
         <div class="slider">
           <div>
             <a href="#">«</a>

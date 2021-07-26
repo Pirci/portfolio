@@ -1,4 +1,30 @@
 /* Defult Style */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Core Style */
 body,
 h1,
 h2,
@@ -9,13 +35,192 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-/* Core Style */
+/* Left Side-bar style */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  height: 25vh;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.side-bar img {
+  max-width: 168px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.side-bar li {
+  list-style: none;
+  padding: 10px;
+  text-align: left;
+}
+
+.nav-list span i,
+.nav-list span a {
+  color: #009688;
+}
+
+.side-bar #gray:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
+.nav-list #opacity:hover {
+  opacity: 0.6;
+}
+
+.side-bar li a {
+  padding-left: 16px;
+}
+
+.nav-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list i {
+  min-width: 15px;
+}
+
+/* Main Content Style */
+.main-content {
+  height: 150vh;
+  background-color: #f1f1f1;
+}
+
+/* Header Style */
+.header h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 10px 0px;
+}
+
+.header .my-portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-portfolio img {
+  max-width: 65px;
+  margin: 16px;
+  border-radius: 50%;
+}
+
+.my-portfolio img:hover,
+.section-a-photos img:hover,
+.section-b-photos img:hover {
+  opacity: 0.6;
+}
+
+.main-content .header {
+  padding: 1px 16px;
+}
+
+.header .filter-buttons {
+  margin: 16px 0px 16px 0px;
+  padding: 16px 0px 16px 0px;
+  border-bottom: 6px solid #ccc;
+  font-size: 15px;
+}
+
+.filter-buttons button:hover {
+  background-color: #ccc !important;
+  cursor: pointer;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #fff;
+  line-height: 22.5px;
+  text-decoration: none;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header #first-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.header button i {
+  margin-right: 16px;
+}
+
+.header span {
+  margin-right: 16px;
+  font-size: 15px;
+}
+
+/* Section-A Photos Style */
+/* Section-B Photos Style */
+.section-a-photos,
+.section-b-photos {
+  display: flex;
+  padding: 0px 8px;
+  background-color: #f1f1f1;
+  justify-content: space-evenly;
+}
+
+.section-a-photos p,
+.section-b-photos p {
+  padding: 1px 16px;
+  margin: 15px 1px;
+}
+
+.section-a-photos img,
+.section-b-photos img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section-a-photos div,
+.section-b-photos div {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 16px;
+  flex-basis: 31%;
+}
+
+/* Content Slider */
+
+/* Section-C Photos Style */
+.section-c-photos {
+  display: flex;
+  padding: 0px 8px;
+}
+
+.section-c-photos div {
+  padding: 0px 8px;
+}
+
+/* Media Quaries */
+/* Hide sidebar below 992px */
+@media screen and (max-width: 992px) {
+  .side-bar {
+    display: none;
+  }
+}
+
+/* Hide header profil photo above 992px  */
+@media screen and (min-width: 993px) {
+  #portfolio .avatar {
+    display: none;
+  }
+}
