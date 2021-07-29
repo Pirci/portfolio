@@ -71,9 +71,17 @@ h6 {
   color: #009688;
 }
 
-.side-bar #gray:hover {
-  color: #000 !important;
-  background-color: #ccc !important;
+.nav-list li#gray {
+  display: block;
+}
+
+.nav-list #gray:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.nav-list #block {
+  display: inline-block;
 }
 
 .nav-list #opacity:hover {
@@ -95,7 +103,7 @@ h6 {
 
 /* Main Content Style */
 .main-content {
-  height: 150vh;
+  height: 200vh;
   background-color: #f1f1f1;
 }
 
@@ -198,16 +206,238 @@ h6 {
   flex-basis: 31%;
 }
 
-/* Content Slider */
+/* Slider Style */
+
+.slider {
+  padding: 32px 0px;
+  text-align: center;
+}
+.slider div {
+  display: inline-block;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider a {
+  white-space: normal;
+  padding: 8px 16px;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.slider a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.slider div a:nth-child(2) {
+  color: #fff;
+  background-color: #000;
+}
+
+.slider div a:nth-child(2):hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
 
 /* Section-C Photos Style */
 .section-c-photos {
   display: flex;
-  padding: 0px 8px;
+  padding: 16px 8px;
+  justify-content: space-between;
 }
 
 .section-c-photos div {
   padding: 0px 8px;
+  flex-grow: 1;
+}
+
+/* Section-D-About Style */
+.section-d-about {
+  padding: 12px 24px;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.section-d-about h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.section-d-about p {
+  margin: 15px 0px;
+  line-height: 1.5;
+}
+
+.section-d-about hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0px;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Section-E-Contact Style */
+.section-e-contact {
+  padding: 12px 24px;
+  color: #000;
+  background-color: #9e9e9e;
+}
+
+.section-e-contact h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.section-e-contact .contact-icons {
+  display: flex;
+  justify-content: center;
+  padding: 24px 8px;
+  margin: 0px -32px;
+}
+
+.section-e-contact .contact-icons div {
+  display: block;
+  padding: 24px 0px;
+  text-align: center;
+  flex-basis: 32%;
+  background-color: #616161;
+  color: #fff;
+}
+
+.contact-icons div p:nth-child(1) {
+  margin: 15px 0px;
+}
+
+.contact-icons div:nth-child(2) {
+  color: #fff;
+  background-color: #009688;
+}
+
+.contact-icons i {
+  font-size: 36px;
+}
+
+/* Section-F-Footer Style */
+.section-f-footer {
+  color: #fff;
+  background-color: #616161;
+  padding: 32px 16px;
+}
+
+.section-f-footer h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.section-f-footer p,
+span {
+  margin: 15px 0px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 0px 8px;
+}
+
+.footer-wrapper div {
+  flex: 1;
+  padding: 0px 8px;
+}
+
+.footer p a {
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.blog-posts img {
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.blog-posts ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.blog-posts ul li {
+  padding: 16px;
+  display: flex;
+}
+
+.blog-posts li {
+  display: flex;
+}
+
+.blog-posts li div:nth-child(1) {
+  flex: 1;
+}
+
+.blog-posts li div:nth-child(2) {
+  flex: 5;
+}
+
+.blog-posts div {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-posts ul li:hover {
+  background-color: #ccc;
+}
+
+.blog-posts ul li:nth-child(1) {
+  border-bottom: 1px solid #ddd;
+}
+
+.popular-tags div {
+  margin-bottom: 16px;
+}
+
+.popular-tags p {
+  margin: 15px 0px;
+}
+
+.popular-tags span {
+  padding: 0px 8px;
+  font-size: 16px;
+  line-height: 22.5px;
+  text-align: center;
+  background-color: #9e9e9e;
+  color: #000;
+}
+
+.popular-tags .highlight {
+  color: #fff;
+  background-color: #000;
+}
+
+.by {
+  color: #fff;
+  background-color: #000;
+  padding: 24px 0px;
+  text-align: center;
+}
+
+.by a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Media Quaries */
