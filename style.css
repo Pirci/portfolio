@@ -361,6 +361,7 @@ span {
   color: #fff;
   cursor: pointer;
   background-color: transparent;
+  text-decoration: underline;
 }
 
 .blog-posts img {
@@ -452,5 +453,30 @@ span {
 @media screen and (min-width: 993px) {
   #portfolio .avatar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-a-photos,
+  .section-b-photos,
+  .section-c-photos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-c-photos div img {
+    display: block;
+  }
+
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    margin: 0 auto !important;
+  }
+
+  .footer-wrapper {
+    display: flexbox;
+    flex-direction: column;
   }
 }
