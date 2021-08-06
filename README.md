@@ -1,8 +1,7 @@
-### Seytech Fullstack Software Developer Bootcamp
+### Portfolio Responsive Page
 
-> HTML & CSS #1st Graduation Project (Portfolio).
+> HTML & CSS Portfolio Project.
 
-From [Fullstack Software Developer Bootcamp](https://www.seytech.co/)
 
 ## Live Demo
 
